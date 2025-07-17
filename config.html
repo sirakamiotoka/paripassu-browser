@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./css/config.css" type="text/css">
+  <title>pari passu -ぱりぱす-</title>
+</head>
+
+<body>
+<div id="main-wrapper">
+    <script src="./js/config.js"></script>
+    <script src="./js/saveload.js"></script>
+    <audio src="./audio/B_Attler.mp3" id="titlemusic" autoplay></audio>
+    <audio src="./audio/せんたく２.mp3" id="selectSE"></audio>
+    <button id="configend" onclick="endconfig()">戻る</button>
+    <button id="fit" onclick="fit()">適用</button>
+    <!--<button id="title_return" onclick="titlereturn()">タイトルに戻る</button>
+    <button id="exit_game" onclick="exitgame()">ゲームを終了する</button>-->
+
+    <h4 class="size">画面サイズ</h4>
+    <div class="radiobutton">
+    <label><input type="radio" name="w_size" value="gokusyou">極小</label>
+    <label><input type="radio" name="w_size" value="syou">小</label>
+    <label><input type="radio" name="w_size" value="tyuu" checked>中</label>
+    <label><input type="radio" name="w_size" value="dai">大</label>
+    <label><input type="radio" name="w_size" value="tokudai">特大</label>
+    </div>
+
+    <h4 class="volume">BGM・SE音量</h4>
+    <div class="button">
+    <label><input type="button" name="BGMvolume" value="大" onclick="BGMup()"></label>
+    <h5 id="BGMview"></h5>
+    <label><input type="button" name="BGMvolume" value="小" onclick="BGMdown()"></label>
+
+    </div>
+</div>
+</body>
+
+</html>

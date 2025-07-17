@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/title.css" type="text/css">
+    <title>pari passu -ぱりぱす-</title>
+</head>
+
+<body>
+<div id="main-wrapper">
+    <div id="titleall">
+        <div class="OPclass">
+            <video id="OPvideo" src="images/game_OP.mp4"></video>
+        </div>
+
+        <script src="./js/title.js"></script>
+        <script src="./js/titleload.js"></script>
+        <audio src="./audio/B_Attler.m4a" id="titlemusic" autoplay></audio>
+        <audio src="./audio/せんたく２.mp3" id="selectSE"></audio>
+        <div class="relative">
+            <img src="images/sample2_1.webp" id="chara2">
+            <img src="images/title.png" id="back">
+            <img src="images/loadback.bmp" id="loadbg">
+            <div class="bg-button">
+                <img src="images/start.png" id="newgame" onclick="st_MouseClick()">
+                <img src="images/load.png" id="loadgame" onclick="lo_MouseClick()">
+                <img src="images/config.png" id="configgame"><!-- onclick="co_MouseClick()">-->
+                <img src="images/exit.png" id="exitgame"><!-- onclick="ex_MouseClick()">-->
+            </div>
+            <div class="loadfile">
+                <button id="load1" class="loadf" onclick="t_load1()">保存されていません</button>
+                <button id="load2" class="loadf" onclick="t_load2()">保存されていません</button>
+                <button id="load3" class="loadf" onclick="t_load3()">保存されていません</button>
+                <button id="load4" class="loadf" onclick="t_load4()">保存されていません</button>
+                <button id="load5" class="loadf" onclick="t_load5()">保存されていません</button>
+                <button id="load6" class="loadf" onclick="t_load6()">保存されていません</button>
+                <button id="load7" class="loadf" onclick="t_load7()">保存されていません</button>
+                <button id="load8" class="loadf" onclick="t_load8()">保存されていません</button>
+                <button id="saveend" class="loadf" onclick="saveend()">戻る</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

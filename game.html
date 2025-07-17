@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <script src="./js/main.js"></script>
+  <script src="./js/story.js"></script>
+  <script src="./js/textsys.js"></script>
+  <script src="./js/saveload.js"></script>
+  <title>pari passu -ぱりぱす-</title>
+</head>
+
+<body>
+  <div id="game-wrapper">
+    <div class="bg" onclick="ClickDisabled()">
+      <img src="images/digital.gif" id="back">
+
+      <div class="content js-fadeIn">
+        <div class="msgwin">
+          <div class="name">
+            <img src="images/namewin.png" id="namebox">
+            <p id="str2"> </p>
+          </div>
+          <div class="text">
+            <img src="images/msgwin.png" id="textbox">
+            <p id="str1" class="js-text-anime">.......</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="branch1">私たちが開発するのはどうでしょう？</button>
+    <button id="branch2">そうなってくれると助かりますね...</button>
+
+<h3 id="bl1" class="backlog">AAA</h3>
+    <img src="images/backlogBG.bmp" id="blBG">
+    <img src="images/scene.bmp" id="scene">
+    <img src="images/scene_sep.bmp" id="scene_sep" onclick="ClickDisabled()">
+
+  <div class="cgscene" onclick="ClickDisabled()">
+        <img src="images/zetubou.jpg" id="CG">
+        <!--
+        <img src="images/tobitsuki.png" id="CG0">
+        <img src="images/zetubou.jpg" id="CG1">
+        <img src="images/kakigoori.jpg" id="CG2">
+        -->
+  </div>
+    <div class="charasize" onclick="ClickDisabled()">
+      <img src="images/pyuseru new.webp" id="chara">
+      <img src="images/joukan.png" id="chara2">
+      <img src="images/runa.webp" id="chara3">
+      <img src="images/miru.png" id="chara4">
+      <img src="images/syaruru.webp" id="chara5">
+    </div>
+
+    <button id="save" onclick="ClickQsave()">クイックセーブ</button>
+    <button id="load" onclick="ClickQload()">クイックロード</button>
+    <button id="loadlist" onclick="Clickloadlist()">ロード</button>
+    <button id="savelist" onclick="Clicksavelist()">セーブ</button>
+    <button id="backlog" onclick="Clickbacklog()">バックログ</button>
+    <button id="config" onclick="titlereturn()">タイトルに戻る</button>
+
+    <div class="savefile">
+      <button id="save1" class="savef" onclick="save1()">保存されていません</button>
+      <button id="save2" class="savef" onclick="save2()">保存されていません</button>
+      <button id="save3" class="savef" onclick="save3()">保存されていません</button>
+      <button id="save4" class="savef" onclick="save4()">保存されていません</button>
+      <button id="save5" class="savef" onclick="save5()">保存されていません</button>
+      <button id="save6" class="savef" onclick="save6()">保存されていません</button>
+      <button id="save7" class="savef" onclick="save7()">保存されていません</button>
+      <button id="save8" class="savef" onclick="save8()">保存されていません</button>
+      <button id="saveend" class="savef" onclick="saveend()">戻る</button>
+      <button id="saveclear" class="savef" onclick="saveclear()">全セーブデータ削除</button>
+    </div>
+
+    <div class="loadfile">
+      <button id="load1" class="loadf" onclick="load1()">保存されていません</button>
+      <button id="load2" class="loadf" onclick="load2()">保存されていません</button>
+      <button id="load3" class="loadf" onclick="load3()">保存されていません</button>
+      <button id="load4" class="loadf" onclick="load4()">保存されていません</button>
+      <button id="load5" class="loadf" onclick="load5()">保存されていません</button>
+      <button id="load6" class="loadf" onclick="load6()">保存されていません</button>
+      <button id="load7" class="loadf" onclick="load7()">保存されていません</button>
+      <button id="load8" class="loadf" onclick="load8()">保存されていません</button>
+      <button id="loadend" class="loadf" onclick="saveend()">戻る</button>
+    </div>
+</div>
+    
+
+
+
+    
+  <audio class="BGM" src="./audio/せいかつ.mp3" id="music"></audio>
+  <audio class="BGM" src="./audio/ヴァロアの町.m4a" id="music2"></audio>
+  <audio class="BGM" src="./audio/ばとる.mp3" id="battle"></audio>
+  <audio class="BGM" src="./audio/おしゃれかふぇかな.mp3" id="cafe"></audio>
+  <audio class="BGM" src="./audio/せんとうまえ.mp3" id="sennyu"></audio>
+
+  <audio src="./audio/ワンポイント１２.mp3" id="branchsound"></audio>
+  <audio src="./audio/すすめるくりっく.mp3" id="clicksound"></audio>
+</body>
+
+</html>
