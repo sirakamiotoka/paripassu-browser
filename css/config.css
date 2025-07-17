@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+    color: rgb(219, 226, 155);
+    background-image: url("../images/loadback.bmp");
+    user-select: none;
+    overflow: hidden;
+    width: 100%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#back {
+    opacity: 0.9;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    width: 140%;
+    height: 130%;
+    background-size: cover;
+}
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#configend {
+    position: absolute;
+    height: 7%;
+    width: 15%;
+    bottom: 3%;
+    left: 2%;
+    z-index: 6;
+    font-size: 1.6vw;
+}
+
+#BGMvolume {
+    position: absolute;
+    top: 20%;
+    size: 100%;
+    font-size: 2vw;
+}
+
+.button {
+    position: absolute;
+    top: 20%;
+    size: 100%;
+    font-size: 2.2vw;
+}
+
+h4 {
+    position: absolute;
+    size: 100%;
+    font-size: 2.5vw;
+}
+
+.size {
+    top: 0%;
+}
+
+.volume {
+    top: 10%;
+}
+
+.radiobutton {
+    position: absolute;
+    top: 10%;
+    size: 100%;
+    font-size: 2vw;
+}
+
+#fit {
+    position: absolute;
+    height: 7%;
+    width: 15%;
+    bottom: 3%;
+    right: 2%;
+    z-index: 6;
+    font-size: 1.6vw;
+}
+
+#title_return {
+    position: absolute;
+    height: 5%;
+    width: 17%;
+    top: 2%;
+    right: 20%;
+    z-index: 6;
+    font-size: 1.6vw;
+}
+
+#exit_game {
+    position: absolute;
+    height: 5%;
+    width: 17%;
+    top: 2%;
+    right: 2%;
+    z-index: 6;
+    font-size: 1.6vw;
+}
+/* ========== レスポンシブ対応：固定比率ラッパー ========== */
+#main-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: calc(100vw * 41 / 52); /* 16:9比率。必要なら52 / 41などに調整 */
+    max-height: 100vh;
+    max-width: calc(100vh * 52 / 41); /* 比率反映 */
+    aspect-ratio: 16 / 9; /* 新しいブラウザ用（古いものは上記が有効） */
+    background-color: black;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#main-wrapper > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

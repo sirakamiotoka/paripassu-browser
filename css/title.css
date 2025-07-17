@@ -1,0 +1,211 @@
+@charset "UTF-8";
+body {
+    background-color: rgb(0, 0, 0);
+    user-select: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-app-region: no-drag;
+}
+
+#OPvideo {
+    opacity: 0;
+    width: 102%;
+    height: auto;
+    user-select: none;
+    position: absolute;
+    transition: opacity 0s;
+}
+
+.OPclass {
+    z-index: 0;
+    position: relative;
+}
+
+#titleall {
+    transition: opacity 1s;
+    opacity: 1;
+}
+
+#back {
+    opacity: 0.9;
+    margin: 0;
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 110%;
+    background-size: cover;
+}
+
+
+/*#loadbg{
+    opacity: 1;
+    z-index: 6;
+}*/
+
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#chara {
+    position: absolute;
+    padding-top: 10%;
+    left: 45px;
+    bottom: -22%;
+    width: 55%;
+    height: 115%;
+    opacity: 1;
+    z-index: 1;
+}
+
+#chara2 {
+    position: absolute;
+    left: 200px;
+    bottom: -150px;
+    width: 60%;
+    height: 120%;
+    opacity: 0;
+    z-index: 2;
+}
+
+.loadfile button {
+    height: 10%;
+    width: 95%;
+    font-size: 2.4vw;
+    font-family: "MS Pゴシック";
+    opacity: 0;
+    z-index: 1;
+    font-weight: bold;
+    left: 2%;
+    background-color: #717272;
+    color: #e4e4e4;
+    -webkit-text-stroke: 0.4px #222232;
+    box-shadow: 0 2px 5px 1.5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+#saveend {
+    height: 7%;
+    width: 15%;
+    top: 90%;
+    left: 2%;
+    z-index: 7;
+}
+
+#load1 {
+    top: 10%;
+}
+
+#load2 {
+    top: 20%;
+}
+
+#load3 {
+    top: 30%;
+}
+
+#load4 {
+    top: 40%;
+}
+
+#load5 {
+    top: 50%;
+}
+
+#load6 {
+    top: 60%;
+}
+
+#load7 {
+    top: 70%;
+}
+
+#load8 {
+    top: 80%;
+}
+
+.bg-button {
+    background: linear-gradient(90deg, rgba(245, 255, 104, 0.411), rgba(255, 255, 255, 0));
+}
+
+#newgame {
+    bottom: 54%;
+    right: 7%;
+    position: absolute;
+    height: 17%;
+    width: 29%;
+    opacity: 1;
+    user-select: none;
+    z-index: 5;
+    transition: opacity 0.3s;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#loadgame {
+    bottom: 38%;
+    right: 7%;
+    position: absolute;
+    height: 17%;
+    width: 29%;
+    opacity: 1;
+    user-select: none;
+    z-index: 5;
+    transition: opacity 0.3s;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#configgame {
+    bottom: 22%;
+    right: 7%;
+    position: absolute;
+    height: 17%;
+    width: 29%;
+    opacity: 0.5;
+    user-select: none;
+    z-index: 5;
+    transition: opacity 0.3s;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+#exitgame {
+    bottom: 6%;
+    right: 7%;
+    position: absolute;
+    height: 17%;
+    width: 29%;
+    opacity: 0.5;
+    
+    user-select: none;
+    z-index: 5;
+    transition: opacity 0.3s;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+/* ========== レスポンシブ対応：固定比率ラッパー ========== */
+#main-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: calc(100vw * 41 / 52); /* 16:9比率。必要なら52 / 41などに調整 */
+    max-height: 100vh;
+    max-width: calc(100vh * 52 / 41); /* 比率反映 */
+    aspect-ratio: 16 / 9; /* 新しいブラウザ用（古いものは上記が有効） */
+    background-color: black;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#main-wrapper > * {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
