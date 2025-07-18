@@ -13,6 +13,9 @@ html, body {
     -moz-user-select: none;
     -webkit-app-region: no-drag;
 }
+html {
+    touch-action: manipulation;
+}
 
 /* 全要素共通 */
 * {
@@ -500,10 +503,10 @@ button:hover {
         height: 10%;
     }
     #loadlist, #savelist {
-        width: 14vh !important;
+        width: 14vw !important;
     }
     #backlog{
-        width: 17vh !important;
+        width: 17vw !important;
     }
     #config {
         width: 20vw !important;
