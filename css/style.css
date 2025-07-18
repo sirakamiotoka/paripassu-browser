@@ -67,16 +67,16 @@ html, body {
 /* ネームボックス */
 .name {
     position: relative;
-    width: 35%;
-    aspect-ratio: 10 / 2;
+    width: 30%;
+    aspect-ratio: 10 / 2.4;
     margin-bottom: 0%;
-    margin-left: -0.3vw;
+    margin-left: -0vw;
 z-index:1;
 }
 
 #namebox {
     width: 93%;
-    height: 10vh;
+    height: 100%;
     object-fit: contain;
     opacity: 0.78;
     display: block;
@@ -88,13 +88,13 @@ z-index:1;
 .name p {
     position: absolute;
     left: 2.7vw;
-    bottom: 1.8vh;
+    bottom: 3vh;
     color: #ffdbf2;
-    font-size: min(5vw, 5vh);
+    font-size: min(4.2vw, 4.2vh);
     font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ヒラギノ角ゴ ProN', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     -webkit-text-stroke: 1.2px #222232;
-    margin: 0;
+    margin: -0.4vh;
     user-select: none;
 }
 
@@ -121,18 +121,18 @@ z-index: 1;
 
 .text p {
     position: absolute;
-    top: 17%;
+    top: 7%;
     left: 5%;
     width: 90%;
     height: 70%; 
 
-  font-size: min(4vw, 4vh);
+  font-size: min(4.2vw, 4.2vh);
 
     font-weight: bold;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'ヒラギノ角ゴ ProN', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffdbf2;
     -webkit-text-stroke: 1.2px #222232;
-    margin: 0;
+     margin: -0.4vh;
     user-select: none;
 }
 
@@ -460,7 +460,10 @@ button:hover {
 /* ========== メディアクエリ（レスポンシブ対応） ========== */
 @media (max-width: 800px) {
     .name p, .text p {
-        font-size: 3vw !important;
+        font-size: 5vw !important;
+    }
+    .name p {
+    left: 2.6vw !important;
     }
     button {
         font-size: 3vw !important;
@@ -481,12 +484,53 @@ button:hover {
     }
 }
 
-@media (max-height: 600px) {
-    #branch1, #branch2 {
-        height: 12%;
+@media (max-height: 500px) {
+    .name p, .text p {
+        font-size: 4.8vh !important;
+    }
+    .name p {
+    left: 2.6vw !important;
     }
     button {
-        font-size: 2.2vw !important;
-        padding: 0.3em 0.6em !important;
+        font-size: 3vh !important;
+        padding: 0.5em 1em !important;
+    }
+    #branch1, #branch2 {
+        font-size: 3vh !important;
+        height: 10%;
+    }
+    #loadlist, #savelist {
+        width: 14vh !important;
+    }
+    #backlog{
+        width: 17vh !important;
+    }
+    #config {
+        width: 20vw !important;
+    }
+
+}
+@media (min-height: 401px) {
+.name p {
+    font-size: 130% !important;
+    bottom: 1.5vh !important;
+    }
+}
+@media (min-width: 501px) and (min-height: 501px) {
+.name p {
+    font-size: 3.4vh !important;
+    bottom: 0.9vw !important;
+    }
+}
+@media (min-width: 601px) and (min-height: 651px) {
+.name p {
+    font-size: 3.95vh !important;
+    bottom: 1vw !important;
+    }
+}
+@media (min-width: 801px) and (min-height: 751px) {
+.name p {
+    font-size: 320% !important;
+    bottom: 0.8vw !important;
     }
 }
