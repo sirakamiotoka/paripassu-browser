@@ -93,7 +93,7 @@ z-index:1;
     left: 2.7vw;
     bottom: 3vh;
     color: #ffdbf2;
-    -webkit-text-stroke: min(0.2vw, 0.2vh) #222232;
+    -webkit-text-stroke: min(0.02vw, 0.02vh) #222232;
     font-size: min(4.2vw, 4.2vh);
     font-weight: bold;
     font-family: 'ヒラギノ角ゴ ProN', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -135,7 +135,7 @@ z-index: 1;
     font-weight: bold;
     font-family: 'ヒラギノ角ゴ ProN', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffdbf2;
-    -webkit-text-stroke: min(0.2vw, 0.2vh) #222232;
+    -webkit-text-stroke: min(0.02vw, 0.02vh) #222232;
      margin: -0.4vh;
     user-select: none;
 }
