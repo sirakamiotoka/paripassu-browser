@@ -482,6 +482,7 @@ button:hover {
     }
     .text p {
         font-size: min(3.2vw, 3.2vh);
+    bottom: -1.5vh; !important;
     }
 }
 
@@ -511,6 +512,7 @@ button:hover {
     }
 .text p {
         font-size: min(3.2vw, 3.2vh);
+    bottom: -1.5vh; !important;
     }
 }
 @media (min-height: 401px) {
